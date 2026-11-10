@@ -8,7 +8,7 @@
   creates workshop labels. Requires: gh auth with admin rights on the repo.
 #>
 param(
-  [string]$Repo = "paulgarias/advanced-github-demo-2"
+  [string]$Repo = "quantumdot/advanced-github-demo-2"
 )
 
 $ErrorActionPreference = "Stop"
@@ -31,7 +31,7 @@ foreach ($l in $labels) {
 
 Write-Host @"
 
-Manual steps remaining:
+Manual steps remaining (details: docs/maintainers.md, "Maintainer setup"):
   1. After the docs workflow first runs: Settings > Pages > Source: 'Deploy from a branch', branch gh-pages, / (root).
   2. On test.pypi.org: add a Trusted Publisher (owner/repo, workflow 'release.yml', environment 'testpypi').
   3. (Optional) Add CODECOV_TOKEN secret and install the Codecov app.

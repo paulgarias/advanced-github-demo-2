@@ -1,8 +1,8 @@
 site_name: statlite
 site_description: A small, dependency-free statistics library.
-site_url: https://paulgarias.github.io/advanced-github-demo-2/
-repo_url: https://github.com/paulgarias/advanced-github-demo-2
-repo_name: paulgarias/advanced-github-demo-2
+site_url: https://quantumdot.github.io/advanced-github-demo-2/
+repo_url: https://github.com/quantumdot/advanced-github-demo-2
+repo_name: quantumdot/advanced-github-demo-2
 edit_uri: edit/main/docs/
 
 theme:
@@ -57,3 +57,4 @@ nav:
       - Quantiles: api/quantiles.md
       - Correlation: api/correlation.md
   - Contributing: contributing.md
+  - Maintainer setup: maintainers.md
