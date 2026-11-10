@@ -154,3 +154,32 @@ def stdev(data: Iterable[float], ddof: int = 1) -> float:
     2.0
     """
     return math.sqrt(variance(data, ddof=ddof))
+
+
+def geometric_mean(data: Iterable[float]) -> float:
+    """Compute the geometric mean.
+
+    Parameters
+    ----------
+    data : Iterable of float
+        The input values. All values must be strictly positive.
+
+    Returns
+    -------
+    float
+        The geometric mean.
+
+    Raises
+    ------
+    ValueError
+        If ``data`` is empty or contains a non-positive value.
+
+    Examples
+    --------
+    >>> round(geometric_mean([1, 4]), 6)
+    2.0
+    """
+    values = as_list(data)
+    if any(x <= 0 for x in values):
+        raise ValueError("geometric mean requires strictly positive values")
+    return math.exp(math.fsum(math.log(x) for x in values) / len(values))
