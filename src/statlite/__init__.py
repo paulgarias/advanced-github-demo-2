@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from statlite.correlation import covariance, pearson
-from statlite.descriptive import mean, median, mode, stdev, variance
+from statlite.descriptive import geometric_mean, mean, median, mode, stdev, variance
 from statlite.quantiles import iqr, percentile
 
 try:
@@ -14,6 +14,7 @@ except ImportError:  # pragma: no cover
 __all__ = [
     "__version__",
     "covariance",
+    "geometric_mean",
     "iqr",
     "mean",
     "median",
