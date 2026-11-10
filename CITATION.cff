@@ -10,6 +10,7 @@ authors:
     given-names: Paul G.
 repository-code: "https://github.com/quantumdot/advanced-github-demo-2"
 url: "https://quantumdot.github.io/advanced-github-demo-2/"
+doi: 10.5281/zenodo.24120900
 license: MIT
 abstract: "A small, dependency-free statistics library used as the demo project for the Advanced GitHub workshop."
 keywords:
