@@ -9,7 +9,7 @@
     demo/failing-ci                                -> CI gating exercise
 #>
 param(
-  [string]$Repo = "paulgarias/advanced-github-demo-2"
+  [string]$Repo = "quantumdot/advanced-github-demo-2"
 )
 
 $ErrorActionPreference = "Stop"

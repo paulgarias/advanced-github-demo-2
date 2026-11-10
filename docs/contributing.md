@@ -2,7 +2,7 @@
 
 ## Workflow
 
-1. Pick or open an [issue](https://github.com/paulgarias/advanced-github-demo-2/issues).
+1. Pick or open an [issue](https://github.com/quantumdot/advanced-github-demo-2/issues).
 2. Create a branch from an up-to-date `main`: `git switch -c feature/<short-name>`.
 3. Make small, focused commits with clear messages.
 4. Run the checks locally (see below), then push and open a pull request.

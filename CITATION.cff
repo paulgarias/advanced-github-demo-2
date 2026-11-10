@@ -3,9 +3,13 @@ message: "If you use this software, please cite it using these metadata."
 title: "statlite"
 type: software
 authors:
-  - name: "Advanced GitHub Workshop contributors"
-repository-code: "https://github.com/paulgarias/advanced-github-demo-2"
-url: "https://paulgarias.github.io/advanced-github-demo-2/"
+  - family-names: Thackray
+    given-names: Joshua K.
+    orcid: "https://orcid.org/0000-0003-2828-452X"
+  - family-names: Arias
+    given-names: Paul G.
+repository-code: "https://github.com/quantumdot/advanced-github-demo-2"
+url: "https://quantumdot.github.io/advanced-github-demo-2/"
 license: MIT
 abstract: "A small, dependency-free statistics library used as the demo project for the Advanced GitHub workshop."
 keywords:

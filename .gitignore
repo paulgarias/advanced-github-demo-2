@@ -16,3 +16,4 @@ htmlcov/
 src/statlite/_version.py
 .vscode/
 .idea/
+slides/

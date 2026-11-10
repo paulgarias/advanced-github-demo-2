@@ -1,8 +1,8 @@
 # statlite
 
-[![CI](https://github.com/paulgarias/advanced-github-demo-2/actions/workflows/ci.yml/badge.svg)](https://github.com/paulgarias/advanced-github-demo-2/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/paulgarias/advanced-github-demo-2/graph/badge.svg)](https://codecov.io/gh/paulgarias/advanced-github-demo-2)
-[![Docs](https://img.shields.io/badge/docs-mkdocs--material-blue)](https://paulgarias.github.io/advanced-github-demo-2/)
+[![CI](https://github.com/quantumdot/advanced-github-demo-2/actions/workflows/ci.yml/badge.svg)](https://github.com/quantumdot/advanced-github-demo-2/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/quantumdot/advanced-github-demo-2/graph/badge.svg)](https://codecov.io/gh/quantumdot/advanced-github-demo-2)
+[![Docs](https://img.shields.io/badge/docs-mkdocs--material-blue)](https://quantumdot.github.io/advanced-github-demo-2/)
 
 A small, dependency-free statistics library. It is the demo project for the
 **Advanced GitHub** workshop, so it is deliberately simple and is developed
