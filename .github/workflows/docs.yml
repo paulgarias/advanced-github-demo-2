@@ -1,0 +1,51 @@
+name: Docs
+
+# Merges to main publish the "dev" docs. Version tags publish a versioned copy
+# and move the "latest" alias. Docs are stored on the gh-pages branch by mike.
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: docs-deploy
+  cancel-in-progress: false
+
+env:
+  NO_MKDOCS_2_WARNING: "1"
+
+jobs:
+  deploy:
+    name: Build & publish docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -e ".[docs]"
+      - name: Build docs (strict)
+        run: mkdocs build --strict
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Publish dev docs
+        if: github.ref_type == 'branch'
+        run: |
+          mike deploy --push dev
+          if ! mike list latest > /dev/null 2>&1; then
+            mike set-default --push dev
+          fi
+      - name: Publish versioned docs
+        if: github.ref_type == 'tag'
+        run: |
+          VERSION="$(echo "${GITHUB_REF_NAME#v}" | cut -d. -f1,2)"
+          mike deploy --push --update-aliases "$VERSION" latest
+          mike set-default --push latest

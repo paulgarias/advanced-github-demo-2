@@ -1,0 +1,22 @@
+name: Feature request
+description: Propose a new statistic or improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should be added? Include the formula or a reference, and the intended signature.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How do we know it is done (tests, docs, edge cases)?
+      value: |
+        - [ ] Implementation with type hints
+        - [ ] NumPy-style docstring with an example
+        - [ ] Unit and property-based tests
+        - [ ] Exported from `statlite/__init__.py`
+        - [ ] Added to `CHANGELOG.md`

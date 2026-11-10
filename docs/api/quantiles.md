@@ -1,0 +1,3 @@
+# Quantiles
+
+::: statlite.quantiles
