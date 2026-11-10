@@ -2,7 +2,7 @@ import pytest
 from hypothesis import given
 from hypothesis import strategies as st
 
-from statlite import mean, median, mode, stdev, variance
+from statlite import harmonic_mean, mean, median, mode, stdev, variance
 
 finite = st.floats(min_value=-1e6, max_value=1e6, allow_nan=False)
 datasets = st.lists(finite, min_size=2, max_size=50)
@@ -42,6 +42,15 @@ def test_variance_needs_two_points() -> None:
 def test_variance_negative_ddof() -> None:
     with pytest.raises(ValueError, match="non-negative"):
         variance([1, 2], ddof=-1)
+
+
+def test_harmonic_mean() -> None:
+    assert harmonic_mean([1, 4, 4]) == pytest.approx(2.0)
+
+
+def test_harmonic_mean_rejects_non_positive() -> None:
+    with pytest.raises(ValueError, match="strictly positive"):
+        harmonic_mean([1, -1])
 
 
 @given(datasets)
