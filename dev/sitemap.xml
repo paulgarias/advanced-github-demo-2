@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://paulgarias.github.io/advanced-github-demo-2/dev/</loc>
+         <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://paulgarias.github.io/advanced-github-demo-2/dev/contributing/</loc>
+         <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://paulgarias.github.io/advanced-github-demo-2/dev/getting-started/</loc>
+         <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://paulgarias.github.io/advanced-github-demo-2/dev/api/correlation/</loc>
+         <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://paulgarias.github.io/advanced-github-demo-2/dev/api/descriptive/</loc>
+         <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://paulgarias.github.io/advanced-github-demo-2/dev/api/quantiles/</loc>
+         <lastmod>2026-11-10</lastmod>
+    </url>
+</urlset>
