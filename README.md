@@ -3,6 +3,7 @@
 [![CI](https://github.com/quantumdot/advanced-github-demo-2/actions/workflows/ci.yml/badge.svg)](https://github.com/quantumdot/advanced-github-demo-2/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/quantumdot/advanced-github-demo-2/graph/badge.svg)](https://codecov.io/gh/quantumdot/advanced-github-demo-2)
 [![Docs](https://img.shields.io/badge/docs-mkdocs--material-blue)](https://quantumdot.github.io/advanced-github-demo-2/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24120900.svg)](https://doi.org/10.5281/zenodo.24120900)
 
 A small, dependency-free statistics library. It is the demo project for the
 **Advanced GitHub** workshop, so it is deliberately simple and is developed
