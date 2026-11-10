@@ -9,9 +9,11 @@ on:
 permissions:
   contents: read
 
+# Cancel superseded PR runs only. Push runs on main always complete, and PR runs
+# get their own group so they can never cancel a run on main.
 concurrency:
-  group: ci-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: ci-${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
   NO_MKDOCS_2_WARNING: "1"
